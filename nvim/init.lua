@@ -1,4 +1,6 @@
-require("adeleux")
-require("adeleux.lazy")
-print("hello")
-vim.wo.relativenumber = true
+require("config.lazy")
+require("config.keymaps")
+require("config.options")
+
+
+
