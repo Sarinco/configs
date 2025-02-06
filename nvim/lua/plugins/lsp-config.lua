@@ -38,6 +38,7 @@ return{
       lspconfig.ltex.setup({})
       lspconfig.nginx_language_server.setup({})
       lspconfig.svelte.setup({})
+
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
       vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, {})
