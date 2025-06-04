@@ -43,6 +43,8 @@ lb () {
 	fi
 }
 
+alias lzd='lazydocker'
+
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
@@ -123,6 +125,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+cjq() {curl $1 | jq}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -153,5 +156,6 @@ export PATH=$PATH:~/.local/bin/
 #cargo bin
 export PATH=$PATH:~/.cargo/bin/
 #
-# source
-source ~/export-esp.sh
+# exports for embedded project
+export LIBCLANG_PATH="/home/antoined/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-18.1.2_20240912/esp-clang/lib"
+export PATH="/home/antoined/.rustup/toolchains/esp/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin:$PATH"
