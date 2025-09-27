@@ -6,3 +6,11 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
+--line display 
+vim.wo.relativenumber = true
+
+--virtual text
+vim.diagnostic.config({
+  virtual_text = true,
+})
+
