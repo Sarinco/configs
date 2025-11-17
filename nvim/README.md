@@ -34,6 +34,30 @@ gd : jump to definition
 <leader>d : clear harpoon
 <C-e> : open harpoon
 
+### tmux
+#### In tmux
+leader : <C-b>
+<leader>-c : new window
+<leader>-: : command mode
+- rename-window name
+- rename-session name
+
+<leader>-d : detach from session
+<leader>-s : list sessions
+<leader>-x : kill pane
+<leader>-& : kill window
+<leader>-D : detach
+
+
+
+#### In terminal
+tmux attach : attach to a session
+tmux ls : show sessions
+
+### vim-test 
+<leader>t testnearest
+<leader>T testfile
+<leader>l testlast
 
 ## adding a new language
 
