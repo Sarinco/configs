@@ -13,20 +13,20 @@ return {
 		opts = {
 			auto_install = true,
 		},
-		--config = function()
-		--  require("mason-lspconfig").setup({
-		--    ensure_installed = {
-		--      "lua_ls",
-		--      "bashls",
-		--      "ast_grep",
-		--      "docker_compose_language_service",
-		--      "svelte",
-		--      "pyright",
-		--      "ts_ls",
-		--      "stylua",
-		--    }
-		--  })
-		--end
+		config = function()
+			require("mason-lspconfig").setup({
+				ensure_installed = {
+					"lua_ls",
+					"bashls",
+					"ast_grep",
+					"docker_compose_language_service",
+					"svelte",
+					"pyright",
+					"ts_ls",
+					"stylua",
+				},
+			})
+		end,
 	},
 
 	{
